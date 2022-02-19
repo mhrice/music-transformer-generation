@@ -28,7 +28,7 @@ Example:
 `./train.py <dataset_directory> <checkpoints_directory>`
 
 ### 3. Generate
-`./generate.py <dataset_directory> <checkpoints_directory> --l <desired_sequence_length>
+`./generate.py <dataset_directory> <checkpoints_directory> --l <desired_sequence_length>`
 
 ## Parameters (note: to change these, just edit utils/constants.py)
 batch_size = 16 <br>
