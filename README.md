@@ -1,4 +1,4 @@
-# music-transformer-generation
+# Music-Transformer-Generation
 ## About
 Transformer-based symbolic music generation based on [Music Transformer](https://arxiv.org/abs/1809.04281) using [REMI](https://arxiv.org/abs/2002.00212) midi encoding.
 
@@ -6,9 +6,12 @@ Uses [MidiTok](https://github.com/Natooz/MidiTok) for the encoding and model imp
 
 Dataset used: [Lakh MIDI Dataset](https://colinraffel.com/projects/lmd/). 
 
+Framework: [Pytorch](https://pytorch.org/).
+
+This is my first project in transformer-based music generation. Received lots of help from the above research and especially code from [MusicTransformer-Pytorch](https://github.com/gwinndr/MusicTransformer-Pytorch). 
+
 ## Generated Examples
 
-TODO
 
 ## Requirements
 Pytorch >= 1.2.0 with Python >= 3.6
