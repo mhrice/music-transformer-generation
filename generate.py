@@ -7,11 +7,13 @@ from utils.tokenizer import tokenizer
 
 def main():
     parser = argparse.ArgumentParser(description='Preprocess midi files for training')
+    
+    parser.add_argument("dataset", help="dataset directory")
     parser.add_argument("checkpoints", help="output directory")
-    parser.add_argument("seq_length", help="output directory")
+    parser.add_argument("--l", help="Sequence length. Default is 2048", dset="seq_length", default=2048)
     args = parser.parse_args()
 
-    dataset = REMI_dataset("remi")
+    dataset = REMI_dataset(args.dataset)
 
     f = int(random.randrange(len(dataset)))
     primer, _  = dataset[f]  

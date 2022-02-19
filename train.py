@@ -23,7 +23,7 @@ CSV_HEADER = ["Epoch", "Learn rate", "Avg Train loss", "Train Accuracy", "Avg Ev
 
 def main():
     parser = argparse.ArgumentParser(description='Preprocess midi files for training')
-    parser.add_argument("dataset", help="output directory")
+    parser.add_argument("dataset", help="dataset directory")
     parser.add_argument("out", help="output directory")
     args = parser.parse_args()
     
