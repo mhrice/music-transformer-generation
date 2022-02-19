@@ -11,7 +11,7 @@ def main():
     parser.add_argument("dataset", help="Dataset directory")
     parser.add_argument("checkpoints", help="Checkpoint path")
     parser.add_argument("out", help="Output midi file name")
-    parser.add_argument("--l", help="Sequence length. Default is 400", dest="seq_length", default=400)
+    parser.add_argument("--l", help="Max Sequence length. Default is 400", dest="seq_length", default=400)
     args = parser.parse_args()
 
     dataset = REMI_dataset(args.dataset)
