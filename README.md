@@ -14,8 +14,8 @@ This is my first project in transformer-based music generation. Received lots of
 
 
 ## Requirements
-Pytorch >= 1.2.0 with Python >= 3.6
-Install dependencies with TODO
+Anaconda, Pytorch >= 1.2.0, Python >= 3.6
+Install dependencies with: `conda env create --file environment.yaml`
 
 ## How to use: 
 ### 1. Get the dataset
