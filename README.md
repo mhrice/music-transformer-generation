@@ -8,10 +8,10 @@ Dataset used: [Lakh MIDI Dataset](https://colinraffel.com/projects/lmd/).
 
 Framework: [Pytorch](https://pytorch.org/).
 
-This is my first project in transformer-based music generation. Received lots of help from the above research and especially code from [MusicTransformer-Pytorch](https://github.com/gwinndr/MusicTransformer-Pytorch). 
+This is my first project in transformer-based music generation. Received lots of help from the above research and especially code from [MusicTransformer-Pytorch](https://github.com/gwinndr/MusicTransformer-Pytorch). Also inspired by [PopMAG](https://arxiv.org/abs/2008.07703), this may be my next music generation attempt!
 
 ## Generated Examples
-
+See examples directory for midi files of varying length
 
 ## Requirements
 Anaconda, Pytorch >= 1.2.0, Python >= 3.6
