@@ -6,11 +6,12 @@ from utils.constants import *
 from utils.tokenizer import tokenizer
 
 def main():
-    parser = argparse.ArgumentParser(description='Preprocess midi files for training')
+    parser = argparse.ArgumentParser(description='Generate Midi Files')
     
     parser.add_argument("dataset", help="dataset directory")
-    parser.add_argument("checkpoints", help="output directory")
-    parser.add_argument("--l", help="Sequence length. Default is 2048", dset="seq_length", default=2048)
+    parser.add_argument("checkpoints", help="Output directory")
+    parser.add_argument("out", help="Output midi file name")
+    parser.add_argument("--l", help="Sequence length. Default is 2048", dest="seq_length", default=2048)
     args = parser.parse_args()
 
     dataset = REMI_dataset(args.dataset)
@@ -29,7 +30,7 @@ def main():
         print(beam_seq)
     programs = [(0, False), (41, False), (61, False), (0, True)]
     generated_midi = tokenizer.tokens_to_midi(beam_seq.tolist(), programs)
-    generated_midi.dump('test.mid')         
+    generated_midi.dump(args.out)         
 
 
 

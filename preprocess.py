@@ -10,8 +10,8 @@ from utils.tokenizer import tokenizer
 
 def main():
     parser = argparse.ArgumentParser(description='Preprocess midi files for training')
-    parser.add_argument("d", help="directory of files")
-    parser.add_argument("-out", help="output directory")
+    parser.add_argument("d", help="Directory of midi files")
+    parser.add_argument("-out", help="Output directory")
     args = parser.parse_args()
 
     dataset_root = Path(args)

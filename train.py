@@ -22,9 +22,9 @@ from utils.run_model import train_epoch, eval_model
 CSV_HEADER = ["Epoch", "Learn rate", "Avg Train loss", "Train Accuracy", "Avg Eval loss", "Eval accuracy"]
 
 def main():
-    parser = argparse.ArgumentParser(description='Preprocess midi files for training')
-    parser.add_argument("dataset", help="dataset directory")
-    parser.add_argument("out", help="output directory")
+    parser = argparse.ArgumentParser(description='Train Music Transformer')
+    parser.add_argument("dataset", help="Dataset directory")
+    parser.add_argument("out", help="Output directory")
     args = parser.parse_args()
     
     os.makedirs(args.out, exist_ok=True)
