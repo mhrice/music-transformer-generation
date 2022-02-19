@@ -20,15 +20,14 @@ Install dependencies with: `conda env create --file environment.yaml`
 ## How to use: 
 ### 1. Get the dataset
 Download and unzip LMD-full from [Lakh MIDI Dataset](https://colinraffel.com/projects/lmd/). 
-Run preprocess.py with the LMD directory path and the desired output path. 
-Example: 
-`./preprocess.py LMD-full data`
+Then:  
+`./preprocess.py <midi_files_directory> <processed_dataset_directory>`
 
 ### 2. Train the model
-`./train.py <dataset_directory> <checkpoints_directory>`
+`./train.py <processed_dataset_directory> <checkpoints_directory>`
 
 ### 3. Generate
-`./generate.py <dataset_directory> <checkpoints_directory> --l <desired_sequence_length>`
+`./generate.py <processed_dataset_directory> <checkpoints_directory> --l <desired_sequence_length>`
 
 ## Parameters 
 To change these, just edit utils/constants.py 
