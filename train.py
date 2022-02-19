@@ -23,6 +23,7 @@ CSV_HEADER = ["Epoch", "Learn rate", "Avg Train loss", "Train Accuracy", "Avg Ev
 
 def main():
     parser = argparse.ArgumentParser(description='Preprocess midi files for training')
+    parser.add_argument("dataset", help="output directory")
     parser.add_argument("out", help="output directory")
     args = parser.parse_args()
     
@@ -43,7 +44,7 @@ def main():
     best_acc_file = os.path.join(results_folder, "best_acc_weights.pickle")
     best_text = os.path.join(results_folder, "best_epochs.txt")
 
-    dataset = REMI_dataset("remi")
+    dataset = REMI_dataset(args.dataset)
     # Creating data indices for training and validation splits:
     dataset_size = len(dataset)
     indices = list(range(dataset_size))
@@ -160,4 +161,5 @@ def main():
 if __name__ == "__main__":
     main()
 
+## remi
 ## output_dir = "checkpoints"
