@@ -27,7 +27,7 @@ Then:
 `./train.py <processed_dataset_directory> <checkpoints_directory>`
 
 ### 3. Generate
-`./generate.py <processed_dataset_directory> <checkpoints_directory> --l <desired_sequence_length>`
+`./generate.py <processed_dataset_directory> <checkpoints_directory> --l <max_sequence_length>`
 
 ## Parameters 
 To change these, just edit utils/constants.py 
