@@ -30,7 +30,8 @@ Example:
 ### 3. Generate
 `./generate.py <dataset_directory> <checkpoints_directory> --l <desired_sequence_length>`
 
-## Parameters (note: to change these, just edit utils/constants.py)
+## Parameters 
+(note: to change these, just edit utils/constants.py) <br>
 batch_size = 16 <br>
 validation_split = .9 <br>
 shuffle_dataset = True <br>
